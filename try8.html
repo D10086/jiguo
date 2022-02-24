@@ -34,26 +34,30 @@
                 <p>免费试用</p>
             </div>
             <div id="main-both">
-                <div id="allPeople">大众试用</div>
-                <div id="someone">体验师专享</div>
+                <div id="red" class="mbo" onclick="madd1()">大众试用</div>
+                <div class="mbo" onclick="madd2()">体验师专享</div>
             </div>
             <hr>
             <div id="main-ful">
-                <div>全部</div>
-                <div>申请中</div>
-                <div>试用中</div>
-                <div>已结束</div>
+                <div onclick="add1()" class="mful" id="add">全部</div>
+                <div onclick="add2()" class="mful">申请中</div>
+                <div onclick="add3()" class="mful">试用中</div>
+                <div onclick="add4()" class="mful">已结束</div>
+
             </div>
             <!-- 免费试用 -->
-            <section class="report-box">
-                <div class="wrap">
-                    <!-- 模板引擎 -->
-                    <dl id="wrapBlo">
-                        
-
-                    </dl>
-                </div>
-            </section>
+            <div id="report-box">
+                <section class="report-box">
+                    <div class="wrap">
+                        <!-- 模板引擎 -->
+                        <dl id="wrapBlo">
+                            
+    
+                        </dl>
+                    </div>
+                </section>
+            </div>
+            <div id="line"><p onclick="line()" id="line-p">向下拉加载更多</p></div>
         </main>
     </div>
 

@@ -87,18 +87,42 @@ li{
 #main-both>div:hover{
     cursor: pointer;
 }
+#main-both>#red{
+    color: red;
+    border-bottom: 3px solid red;
+}
 #main-ful{
     width: 30%;
     margin: 0 auto;
 }
+
 #main-ful>div{
+    color: gray;
     display: inline-block;
     width: 24%;
     height: 30px;
     text-align: center;
     line-height: 30px;
 }
+#main-ful>#add{
+    color: black;
+    font-weight: bold;
+}
 #main-ful>div:hover{
+    cursor: pointer;
+}
+#report-box{
+    width: 100%;
+    height: 1650px;
+}
+#line{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: red;
+}
+#line>p:hover{
     cursor: pointer;
 }
 .report-box{
