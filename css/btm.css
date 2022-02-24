@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+#bottom{
+    width: 100%;
+    height: 320px;
+    background-color: rgb(76, 69, 69);
+    position: absolute;
+    bottom: 0;
+}
+#bt-main{
+    width: 70%;
+    height: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+}
+#ewm{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    border-radius: 5px;
+}
+
+#text{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 200px;
+    overflow: hidden;
+}
+#text>ul{
+    float: left;
+    list-style: none;
+    margin-right:40px ;
+    
+}
+ul>li{
+    color: gray;
+    font-size: 13px;
+    text-align: left;
+}
+
