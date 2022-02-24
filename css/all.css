@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    user-select: none;
 }
 li{
     list-style: none;
 }
 .outer{
     border: 1px solid grey;
+    box-sizing: border-box;
     width:100%;
 }
 #head{
@@ -61,11 +63,7 @@ li{
 
 
 
-*{
-    margin: 0;
-    padding: 0;
-    user-select: none;
-}
+
 #bottom{
     width: 100%;
     height: 320px;
