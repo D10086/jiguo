@@ -18,19 +18,25 @@ function aj(a){
         }
     }
 }
-aj('http://192.168.31.110:3000/useing/master')
+aj('http://192.168.31.110:3000/useing/public')
 
 
 var line_ = document.getElementById('line-p')
 var reb = document.getElementById('report-box')
+var line_s = document.getElementsByClassName('line_')[0]
 var timer = null;
-function line(){
-    line_.innerHTML = '正在加载'
-    timer = setInterval(function(){
-        reb.style.height = '2050px'
-        line_.innerHTML = '没有更多'
-    },2000)
-}
+    function line(){
+        line_.innerHTML = '正在加载'
+        line_s.id = 'linel'
+        timer = setInterval(function(){
+            reb.style.height = '2050px'
+            line_.innerHTML = '没有更多'
+            line_s.id = 'line_'
+        },1000)
+    }
+    
+
+
 
 
 var div_bo = document.getElementsByClassName('mbo')
@@ -44,7 +50,7 @@ function madd1(){
         div_[i].id = ''
     }
     div_[0].id = 'add'
-    aj('http://192.168.31.110:3000/useing/master')
+    aj('http://192.168.31.110:3000/useing/public')
     
 }
 function madd2(){
@@ -65,7 +71,7 @@ function add1(){
         div_[i].id = ''
     }
     div_[0].id = 'add'
-    aj('http://192.168.31.110:3000/useing/master')
+    aj('http://192.168.31.110:3000/useing/public')
 }
 function add2(){
     for(var i = 0;i<div_.length;i++){
@@ -79,7 +85,7 @@ function add3(){
         div_[i].id = ''
     }
     div_[2].id = 'add'
-    aj('http://192.168.31.110:3000/useing/master')
+    aj('http://192.168.31.110:3000/useing/public')
 }
 function add4(){
     for(var i = 0;i<div_.length;i++){

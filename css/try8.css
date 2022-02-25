@@ -122,9 +122,25 @@ li{
     line-height: 50px;
     color: red;
 }
+#line-p{
+    display: inline-block;
+}
 #line>p:hover{
     cursor: pointer;
 }
+#line_{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../image/more.png')no-repeat 0px 12px;
+}
+#linel{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../image/loading-icon.gif')no-repeat 0px 2px;
+}
+
 .report-box{
     width: 100%;
     height: 100%;
@@ -162,6 +178,7 @@ li{
     color: black;
     font-size: 20px;
     text-align: center;
+    height: 100px;
 }
 .tabs-graw{
     color: grey;
