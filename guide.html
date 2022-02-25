@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="./css/play.css">
+    <script src="./js/template-web.js"></script>
+    <script src="./js/play2.js"></script>
 </head>
 <body>
     <div class="outer">
@@ -20,14 +22,69 @@
             </ul>
             <div class="h_right">
                 <img src="./image/search.png" alt="">
-                <span class="h_span"><a href="">注册</a></span>
-                <span class="h_span"><a href="">登录</a></span>
+                <span class="h_span"><a href="./register.html">注册</a></span>
+                <span class="h_span"><a>登录</a></span>
             </div>
         </header>
     </div>
 
 
+<<<<<<< HEAD:guide.html
+    <div class="cooltil">
+        <p class="coolbig">导购清单</p>
+        <ul class="coolli">
+            <li class="coolsm " id="chred" onclick="newclick()">最新</li>
+            <li class="coolsm" onclick="hotclick()">最热</li>
+        </ul>
+    </div>  
+    
+    <div class="cooln">
+        <div id="full0"></div>
+        <div class="addmore" onclick="add()">
+            <div class="circle">
+                <!-- <img src="./image/loading-icon.gif" > -->
+                <a>加载更多</a>
+            </div>
+            <div id="full1"></div>
+        </div>
+    </div>
+
+
+    <script type="text/html" id="fullm">
+        <ul class="full0ul">
+            {{each value}}
+           <li class="list0">
+            <img src={{$value.img}} class="image0">
+            <p class="tittle0">{{$value.text}}</p>
+            <p class="susu0">
+                <span class="num10">{{$value.like}}</span>
+                <span class="num20">{{$value.words}}</span>
+            </p>
+            
+           </li>
+            {{/each}}
+
+        </ul>
+       
+        <ul class="full0ul">
+            {{each value}}
+           <li class="list0">
+            <img src={{$value.img}} class="image0">
+            <p class="tittle0">{{$value.text}}</p>
+            <p class="susu0">
+                <span class="num10">{{$value.like}}</span>
+                <span class="num20">{{$value.words}}</span>
+            </p>
+            
+           </li>
+            {{/each}}
+
+        </ul>
+    </script>
+
+=======
     <!-- 底部 -->
+>>>>>>> b85099dba1ec3f8df6353c7103c86693fa933ce0:all.html
     <div id="bottom">
         <div id="bt-main">
             <div id="ewm"><img src="./img/code.png" alt=""></div>
