@@ -23,9 +23,13 @@ aj('http://192.168.31.110:3000/useing/master')
 
 var line_ = document.getElementById('line-p')
 var reb = document.getElementById('report-box')
+var timer = null;
 function line(){
-    reb.style.height = '2050px'
-    line_.innerHTML = '没有更多'
+    line_.innerHTML = '正在加载'
+    timer = setInterval(function(){
+        reb.style.height = '2050px'
+        line_.innerHTML = '没有更多'
+    },2000)
 }
 
 
