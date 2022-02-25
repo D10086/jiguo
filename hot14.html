@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/hot14.css">
+</head>
+
+<body>
+    <div class="outer">
+        <header id="head">
+            <div class="head_logo"><img src="./img/logonew.png"></div>
+            <ul class="head_center">
+                <li><a href="">首页</a></li>
+                <li><a href="">酷玩</a></li>
+                <li><a href="">导购</a></li>
+                <li><a href="">试用</a></li>
+                <li><a href="">报告</a></li>
+            </ul>
+            <div class="h_right">
+                <img src="./image/search.png" alt="">
+                <span class="h_span"><a href="">注册</a></span>
+                <span class="h_span"><a href="">登录</a></span>
+            </div>
+        </header>
+    </div>
+
+    <!-- 主体 -->
+    <section class="wrap play-top">
+        <h1>体验报告</h1>
+        <nav class="play-nav">
+            <a href="./new14.html">最新</a>
+            <a href="javascript:void(0);" class="on">最热</a>
+        </nav>
+    </section>
+    <section class="report-box">
+        <div class="wrap report pad25 fix">
+            <div class="listInfo left">
+                <ul id="myDiv">
+
+                </ul>
+                <div class="playMore">
+                    <a href="javascript:void(0);" class="more-btn" id="report-btn">点击加载更多</a>
+                </div>
+            </div>
+            <aside class="listR right">
+                <div class="ty">
+                    <h2 class="title">极果体验师</h2>
+                    <figure class="imgBox"><img src="./img/tiyanImg.jpg"></figure>
+                    <div class="info">
+                        <h5>福利</h5>
+                        <p class="text">第一时间体验新品，大众试用优先通过，还有定向邀请试用，新品玩到手软！</p>
+                        <h5>要求</h5>
+                        <p class="text">是某个领域的大神级玩家，在社交网络或圈子里有大影响力，善写作会拍摄。</p>
+                        <h5>申请</h5>
+                        <p class="text">1. 关注极果公众号：jguojguo<br>（或扫描下方二维码）<br>2. 在公众号内回复：体验师</p>
+                    </div>
+                </div>
+                <div class="guanzhu">
+                    <h2 class="title">关注我们</h2>
+                    <figure class="imgBox"><img src="./img/myCode.jpg"></figure>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+
+
+    <div id="bottom">
+        <div id="bt-main">
+            <div id="ewm"><img src="./img/code.png" alt=""></div>
+            <div id="text">
+                <ul>
+                    <li style=" margin-bottom: 20px;width: 130px;"><img src="./img/logoImg.jpg" alt=""></li>
+                    <li style="margin-bottom: 20px;">
+                        <p>全球酷玩试用导购平台</p>
+                        <p>酷'新奇'好玩'品质</p>
+                    </li>
+                    <li>
+                        <p>微信添加'JguoJguo'</p>
+                        <p>获取我们的服务</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li style="color: white; font-size: 20px;margin-bottom: 20px;">免费试用</li>
+                    <li>
+                        <p>试用流程</p>
+                        <p>如何提高成功率</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li style="color: white; font-size: 20px;margin-bottom: 20px;">友情链接</li>
+                    <li><span>智东西&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span> WEIBUSI</span></li>
+                    <li><span>搜狐IT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span> 腾讯科技</span></li>
+                    <li><span>搜狐数码&nbsp;&nbsp;&nbsp;</span><span>凤凰科技</span></li>
+                    <li><span>凤凰数码&nbsp;&nbsp;&nbsp;</span><span>PConline</span></li>
+                    <li><span>泡泡网 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>3W咖啡</span></li>
+                    <li><span>ZUK社区&nbsp;&nbsp;&nbsp;</span><span>亿览emie</span></li>
+                    <li><span>极客公园&nbsp;&nbsp;&nbsp;</span><span>易寻易启玩</span></li>
+                    <li><span>果库</span></li>
+                </ul>
+                <ul>
+                    <li style="color: white; font-size: 20px;margin-bottom: 20px;">购买攻略</li>
+                    <li>美亚海淘教程</li>
+                    <li>日亚海淘教程</li>
+                    <li>海淘转运攻略</li>
+                    <li>kickstarter 众筹购买攻略</li>
+                    <li>indiegogo 众筹购买攻略</li>
+                </ul>
+                <ul>
+                    <li style="color: white; font-size: 20px;margin-bottom: 20px;">厂商合作</li>
+                    <li>关于我们</li>
+                    <li>联系极果</li>
+                    <li>商务合作:BD@jiguo.com</li>
+                    <li>CEO邮箱:CEO@JIGUO.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/template-web.js"></script>
+<script src="./js/hot14.js"></script>
+<script type="text/html" id="myfirst">
+    {{each value}}
+    
+        <div class="kuang">
+            <img src="{{$value.img}}" alt="" width="700" height="260">
+            <h5>{{$value.text}}</h5>
+			<span>{{$value.uName}}</span>
+			<span>{{$value.endTime}}</span>
+            <!-- <p class="money">{{$value.price}}</p> -->
+            <p class="fang">
+                <span class="a">{{$value.num}}</span>
+                <span class="b">{{$value.apply}}</span>
+            </p>
+			<div class="unnm">{{$value.text}}</div>
+        </div>
+    {{/each}}
+</script>
+</html>

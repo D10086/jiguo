@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/try8.css">
+</head>
+
+<body>
+    <div class="outer">
+        <header id="head">
+            <div class="head_logo"><img src="./img/logonew.png"></div>
+            <ul class="head_center">
+                <li><a href="">首页</a></li>
+                <li><a href="">酷玩</a></li>
+                <li><a href="">导购</a></li>
+                <li><a href="" style="color: red;font-weight: bold;">试用</a></li>
+                <li><a href="">报告</a></li>
+            </ul>
+            <div class="h_right">
+                <img src="./image/search.png" alt="">
+                <span class="h_span"><a href="./register.html">注册</a></span>
+                <span class="h_span"><a href="">登录</a></span>
+            </div>
+        </header>
+    </div>
+
+    <div>
+        <main id="main">
+            <div id="main-head">
+                <p>免费试用</p>
+            </div>
+            <div id="main-both">
+                <div id="red" class="mbo" onclick="madd1()">大众试用</div>
+                <div class="mbo" onclick="madd2()">体验师专享</div>
+            </div>
+            <hr>
+            <div id="main-ful">
+                <div onclick="add1()" class="mful" id="add">全部</div>
+                <div onclick="add2()" class="mful">申请中</div>
+                <div onclick="add3()" class="mful">试用中</div>
+                <div onclick="add4()" class="mful">已结束</div>
+
+            </div>
+            <!-- 免费试用 -->
+            <div id="report-box">
+                <section class="report-box">
+                    <div class="wrap">
+                        <!-- 模板引擎 -->
+                        <dl id="wrapBlo">
+                            
+    
+                        </dl>
+                    </div>
+                </section>
+            </div>
+            <div id="line"><div id="line_" class="line_"></div> <p onclick="line()" id="line-p"> 向下拉加载更多</p></div>
+        </main>
+    </div>
+
+    <div id="bottom">
+        <div id="bt-main">
+            <div id="ewm"><img src="./img/code.png" alt=""></div>
+            <div id="text">
+                <ul>
+                    <li style=" margin-bottom: 20px;width: 150px;"><img src="./img/logoImg.jpg" alt=""></li>
+                    <li style="margin-bottom: 20px;">
+                        <p>全球酷玩试用导购平台</p>
+                        <p>酷'新奇'好玩'品质</p>
+                    </li>
+                    <li>
+                        <p>微信添加'JguoJguo'</p>
+                        <p>获取我们的服务</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li style="color: white; font-size: 20px;margin-bottom: 20px;">免费试用</li>
+                    <li>
+                        <p>试用流程</p>
+                        <p>如何提高成功率</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li style="color: white; font-size: 20px;margin-bottom: 20px;">友情链接</li>
+                    <li><span>智东西&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span> WEIBUSI</span></li>
+                    <li><span>搜狐IT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span> 腾讯科技</span></li>
+                    <li><span>搜狐数码&nbsp;&nbsp;&nbsp;</span><span>凤凰科技</span></li>
+                    <li><span>凤凰数码&nbsp;&nbsp;&nbsp;</span><span>PConline</span></li>
+                    <li><span>泡泡网 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>3W咖啡</span></li>
+                    <li><span>ZUK社区&nbsp;&nbsp;&nbsp;</span><span>亿览emie</span></li>
+                    <li><span>极客公园&nbsp;&nbsp;&nbsp;</span><span>易寻易启玩</span></li>
+                    <li><span>果库</span></li>
+                </ul>
+                <ul>
+                    <li style="color: white; font-size: 20px;margin-bottom: 20px;">购买攻略</li>
+                    <li>美亚海淘教程</li>
+                    <li>日亚海淘教程</li>
+                    <li>海淘转运攻略</li>
+                    <li>kickstarter 众筹购买攻略</li>
+                    <li>indiegogo 众筹购买攻略</li>
+                </ul>
+                <ul>
+                    <li style="color: white; font-size: 20px;margin-bottom: 20px;">厂商合作</li>
+                    <li>关于我们</li>
+                    <li>联系极果</li>
+                    <li>商务合作:BD@jiguo.com</li>
+                    <li>CEO邮箱:CEO@JIGUO.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/try8.js"></script>
+<script src="./js/template-web.js"></script>
+<script type="text/html" id="myfirst">
+    {{each value}}
+        <dt class="wrapBlo">
+            <a href="">
+                <span class="top-tip-sf">{{$value.info_ty}}</span>
+                <img src="{{$value.img}}" width="220" height="130">
+                <div class="hot-con">
+                    <h2 class="name">{{$value.text}}</h2>
+                    <p class="tabs-graw">
+                        <span>{{$value.totalnum}}</span>
+                        <span>{{$value.num}}台</span>
+                    </p>
+                    <p class="sq"><span>{{$value.apply}}</span>申请</p>
+                    <p class="current-graw">报告数量:8</p>
+                </div>
+            </a>
+        </dl>
+    {{/each}}
+</script>
+
+</html>
