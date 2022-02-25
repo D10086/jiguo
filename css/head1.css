@@ -165,89 +165,90 @@ ul>li{
     padding: 4px 30px;
 }
 
-/* 热门 */
-
-.kj{
+/* 轮播图 */
+.changepic{
     width: 1100px;
-    margin: 0 auto;
-}
-#hot{
+    margin:  0 auto;
     position: relative;
 }
-#hot .left{
+.winshow{
+    overflow: hidden;
+    width: 1080px;
+    margin: 0 auto;
+}
+.aleft{
     position: absolute;
     top: 120px;
     left:-56px;
 }
-#hot .right{
+.aright{
     position: absolute;
     top: 120px;
     right:-56px;
 }
-#hot .title{
+.atitle{
     margin: 10px 0;
     color: black;
     font-weight: bold;
     font-size: 20px;
 }
 
-#hot ul{
+.allleng{
     overflow: hidden;
+    width: 2160px;
 }
-#hot .rup{
+.rup{
     position: absolute;
     top: 0;
-    right: 0px;
+    right: 40px;
     color:white;
     background-color: #FE5341;
     padding: 2px 4px;
 
 }
-#hot li{
-    width: 230px;
+.allleng li{
+    width: 270px;
     float: left;
     position: relative;
-    margin-right: 40px;
-    border: 1px solid rgb(219, 210, 210);
+    padding-right: 40px;
+    /* border: 1px solid rgb(219, 210, 210); */
+    box-sizing: border-box;
 
 }
-/* #hot li:last-of-type{
-    margin-right: 0;
-} */
-#hot li p{
+
+.allleng li p{
     text-align: center;
     margin-bottom: 5px;
 }
-#hot li img{
+.allleng li img{
     width: 230px;
 }
-#hot .name{
+.allleng .name{
     padding: 5px 15px;
     font-size: 16px;
     color: black;
 }
-#hot .year{
+.year{
     display: inline-block;
     padding: 3px 5px;
     border: 1px solid #FE5341;
     border-radius: 5px;
     color: #FE5341;
 }
-#hot .ask span,#hot .time{
+.ask span,.time{
     color: #FE5341;
 }
-#hot .ask{
+.ask{
     color:black;
 
 }
-#hot .uni .rup{
+.uni .rup{
     background-color: #F9CF9A;
 }
-#hot .uni .year{
+.uni .year{
     color: #31c751;
     border: 1px solid #31c751;
 }
-
 /* 精选报告 */
 .maxl{
     background-color: #F7F7F7;
@@ -306,31 +307,24 @@ ul>li{
 }
 
 /*  */
-.max2{
-    background:none;
-}
-#repeat1{
-    width: 1100px;
-    margin: 0 auto;
-}
-#repeat1 .title{
-    margin: 10px 0;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
+#container1{
+    height: 232px;
+    overflow: hidden;
+    margin-bottom: 30px;
 }
 #container1 img{
     width: 228px;
-}
+} 
 #container1 ul{
     overflow: hidden;
 }
 #container1 li{
+    position: relative;
     float: left;
     width: 230px;
-    height: 230px;
+    height: 233px;
     margin-right: 40px;
-    border: 1px solid rgb(219, 210, 210);
+    /* border: 1px solid rgb(219, 210, 210); */
 }
 #container1 .tittle{
     text-align: center;
@@ -360,4 +354,73 @@ ul>li{
     font-size: 14px;
     margin-left: 20px;
     color: rgbrgb(24, 23, 23);
+}
+#container1 .bg{
+    position: absolute;
+    top: 213px;
+}
+
+/*  */
+#container2 img,#container3 img{
+    width: 228px;
+}
+#container2 ul,#container3 ul{
+    overflow: hidden;
+}
+#container2 li,#container3 li{
+    float: left;
+    width: 230px;
+    height: 230px;
+    margin-right: 40px;
+    border: 1px solid rgb(219, 210, 210);
+}
+#container2 .tittle,#container3 .tittle{
+    text-align: center;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    color:rgb(27, 27, 27);
+    font-size: 14px;
+}
+#container2 .susu,#container3 .susu{
+    padding: 5px 10px;
+    color:rgb(27, 27, 27);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+#container2 .num1,#container3 .num1{
+    display: inline-block;
+    padding: 5px 0 0 20px;
+    background: url(../image/reply.png) 3px 8px no-repeat;
+    margin-left: 90px;
+    font-size: 14px;
+    color: rgb(24, 23, 23);
+}
+#container2 .num2,#container3 .num2{
+    display: inline-block;
+    padding: 5px 0 0 20px;
+    background: url(../image/zan.png) 3px 8px no-repeat;
+    font-size: 14px;
+    margin-left: 20px;
+    color: rgbrgb(24, 23, 23);
+}
+.addmore{
+    width: max-content;
+    margin: 10px auto;
+}
+.addmore a{
+    color: #FE5341;
+}
+#container3{
+    display: none;
+}
+.circle{
+    display: inline-block;
+}
+
+.allleng{
+    width: 4080px;
+}
+.picmove{
+    overflow: hidden;
+    width: 1100px;
 }
