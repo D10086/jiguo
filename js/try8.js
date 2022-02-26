@@ -64,8 +64,6 @@ function madd2(){
     div_[0].id = 'add'
     aj('http://192.168.31.110:3000/useing/public')
 }
-
-
 function add1(){
     for(var i = 0;i<div_.length;i++){
         div_[i].id = ''
@@ -78,7 +76,7 @@ function add2(){
         div_[i].id = ''
     }
     div_[1].id = 'add'
-    aj('http://192.168.31.110:3000/useing/public')
+    aj('http://192.168.31.110:3000/useing/master')
 }
 function add3(){
     for(var i = 0;i<div_.length;i++){
@@ -92,6 +90,6 @@ function add4(){
         div_[i].id = ''
     }
     div_[3].id = 'add'
-    aj('http://192.168.31.110:3000/useing/public')
+    aj('http://192.168.31.110:3000/useing/master')
 }
 
