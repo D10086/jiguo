@@ -1,6 +1,6 @@
 $('.addmore').on('click',function(){
-    $('.circle').show();
-    
+    $('#container3').css('display','block');
+    $('.addmore').hide()
 })
 
 // 轮播图

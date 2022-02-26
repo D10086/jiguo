@@ -89,20 +89,22 @@ $('.reout').eq(5).find('input').blur(function(){
 })
 
 function reg_(){
-    var data = {
-        phone:count1.value,
-        code:code_.value,
-        username:use.value,
-        password:psd.value,
-    }
+    var data = 'phone='+phone_.value+'&code='+code_.value+'&username='+use.value+'&password='+psd.value
+    // var data = 'phone=13226486979&code=r2B7&username=a123456&password=a123456'
     var myajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP')
-    myajax.open('http://192.168.31.110:3000/users/register',true)
+    myajax.open('post','http://192.168.31.110:3000/users/register',true)
+    myajax.setRequestHeader('Content-type','application/x-www-form-urlencoded')
     myajax.send(data)
+    
     myajax.onreadystatechange = function(){
         if(myajax.readyState ==4){
             if(myajax.status==200){
-                console.log(myajax.responseText);
-                console.log(data);
+                obj = JSON.parse(myajax.responseText)
+                if(obj.msg == '注册成功'){
+                    alert('注册成功')
+                }else if(obj.msg == '手机号已存在'){
+                    alert('手机号已存在')
+                }
             }
         }
     }
