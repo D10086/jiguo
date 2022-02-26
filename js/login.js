@@ -7,3 +7,7 @@ clo.onclick = function(){
 gin.onclick = function(){
     div_.className = 'login'
 }
+
+count1.onblur=function(){
+    
+}
