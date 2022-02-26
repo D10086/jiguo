@@ -1,5 +1,5 @@
 var myajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
-    myajax.open('get', 'http://192.168.31.110:3000/report/hot', true);
+    myajax.open('get', 'http://192.168.31.110:3000/useing/public', true);
     myajax.send();
     myajax.onreadystatechange = function () {
         if (myajax.readyState == 4) {
