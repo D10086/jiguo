@@ -20,6 +20,17 @@ li{
     box-sizing: border-box;
    
 }
+
+.back{
+    position: fixed;
+    right: 150px;
+    bottom: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background: #7c7679;
+    padding: 15px;
+}
 .head_logo{
     float: left;
 }
