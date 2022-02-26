@@ -7,9 +7,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/login.css">
     <style>
-        #tishi1,#tishi2{
-            
+        .lg-left{
+            position: relative;
         }
+        #tishi1,#tishi2{
+            width: 50px;
+            line-height: 40px;
+            display: inline-block;
+            position: absolute;
+            font-size: 18px;
+            background-color: aqua;
+        }
+        #tishi1{
+            top: 45px;
+            right:0px;
+        }
+        #tishi2{
+            top: 150px;
+            right:0px;
+        }
+        
+
+        
     </style>
 </head>
 <body>
@@ -37,12 +56,14 @@
             <p style="font-size: 18px; color: gray;">极果账号登录</p>
             <div class="lg-inp"> <span class="phone"></span> 
                 <input type="text" class="input_" placeholder="请输入账号" id="count1"> 
-                <span id="tishi1"></span>
             </div>
+            <span id="tishi1"></span>
+
             <div class="lg-inp"> <span class="pass"></span>
                 <input type="password" class="input_" placeholder="请输入密码" id="sec1">
-                <span id="tishi2"></span>
             </div>
+            <span id="tishi2"></span>
+
             <div style="margin-top: 20px; float: left;"><input type="checkbox"><span> 下次自动登录</span></div>
             <button style="margin: 10px 50px;width: 150px;height: 40px;border: none; border-radius: 20px;background-color: red;color: white;">登录</button>
 
@@ -101,6 +122,7 @@
             </div>
         </div>
     </div>
+    <script src="./js/login.js"></script>
 </body>
-<script src="./js/login.js"></script>
+
 </html>
