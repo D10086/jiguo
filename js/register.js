@@ -90,7 +90,7 @@ $('.reout').eq(5).find('input').blur(function(){
 
 function reg_(){
     var data = {
-        phone:phone_.value,
+        phone:count1.value,
         code:code_.value,
         username:use.value,
         password:psd.value,
