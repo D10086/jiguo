@@ -20,3 +20,72 @@ reg_get.onclick = function(){
 }
 
 
+// 表单验证
+$('.reout').eq(0).find('input').blur(function(){
+    var span=$('.rein').eq(0);
+    var re=/^1[3578]\d{9}$/;
+    if(re.test($(this).val())){
+        span.text('输入正确');
+        span.css('color','green');
+    }else{
+        span.text('请输入正确手机号码');
+        span.css('color','red');
+    }
+})
+$('.reout').eq(1).find('input').blur(function(){
+    var span=$('.rein').eq(1);
+    var re=/^r2B7$/;
+    if(re.test($(this).val())){
+        span.text('输入正确');
+        span.css('color','green');
+    }else{
+        span.text('请输入正确验证码');
+        span.css('color','red');
+    }
+})
+$('.reout').eq(2).find('input').blur(function(){
+    var span=$('.rein').eq(2);
+    var re=/^[0-9]{4}$/;
+    if(re.test($(this).val())){
+        span.text('输入正确');
+        span.css('color','green');
+    }else{
+        span.text('请输入正确验证码');
+        span.css('color','red');
+    }
+})
+$('.reout').eq(3).find('input').blur(function(){
+    var span=$('.rein').eq(3);
+    var re=/^[\u4e00-\u9fa5a-zA-Z]{4,8}$/;
+    if(re.test($(this).val())){
+        span.text('输入正确');
+        span.css('color','green');
+    }else{
+        span.text('请重新输入用户名');
+        span.css('color','red');
+    }
+})
+
+$('.reout').eq(4).find('input').blur(function(){
+    var span=$('.rein').eq(4);
+    var re=/^\w{6,12}$/;
+    if(re.test($(this).val())){
+        span.text('输入正确');
+        span.css('color','green');
+    }else{
+        span.text('请输入正确密码');
+        span.css('color','red');
+    }
+})
+$('.reout').eq(5).find('input').blur(function(){
+    var span=$('.rein').eq(5);
+    var same=$('.reout').eq(4).find('input').val();
+    if($(this).val()==same){
+        span.text('输入正确');
+        span.css('color','green');
+    }else{
+        span.text('请确认密码');
+        span.css('color','red');
+    }
+})
+

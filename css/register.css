@@ -77,7 +77,6 @@ li{
     height: 600px;
     margin: 0 auto;
     background-color: gainsboro;
-    padding: 50px 0px;
 }
 .reg-main{
     width: 800px;
@@ -103,8 +102,9 @@ li{
     top: 100px;
     left: calc(50% - 150px);
     overflow: hidden;
+    padding-right: 150px;
 }
-.reg-text>input{
+.reg-text input{
     width: 300px;
     height: 40px;
     box-sizing: border-box;
@@ -178,3 +178,13 @@ ul>li{
     text-align: left;
 }
 
+
+.reout{
+    position: relative;
+}
+.rein{
+    position: absolute;
+    top: 25px;
+    right: -130px;
+    font-size: 14px;
+}
