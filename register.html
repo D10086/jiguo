@@ -43,13 +43,18 @@
                 </div>
                 <div class="lg-inp"> <span class="pass"></span>
                     <input type="password" class="input_" placeholder="请输入密码" id="sec1" pattern="/^\w{6,12}$/">
+                    <input type="text" class="input_" placeholder="请输入账号" id="count1" ">
+                    <span id="tishi1"></span>
+                </div>
+                <div class="lg-inp"> <span class="pass"></span>
+                    <input type="password" class="input_" placeholder="请输入密码" id="sec1" ">
                     <span id="tishi2"></span>
                 </div>
 
 
                 <div style="margin-top: 20px; float: left;"><input type="checkbox"><span> 下次自动登录</span></div>
                 <button
-                    style="margin: 10px 50px;width: 150px;height: 40px;border: none; border-radius: 20px;background-color: red;color: white;">登录</button>
+                    style="margin: 10px 50px;width: 150px;height: 40px;border: none; border-radius: 20px;background-color: red;color: white;" onclick="login()">登录</button>
 
                 <div style="margin-top: 15px;overflow: hidden;color: gray;"><span>注册新账号</span><span
                         style="margin-left: 200px;">忘记密码?</span></div>
@@ -70,11 +75,11 @@
             </div>
             <div class="reg-text">
                 <div class="reout">
-                    <input type="text" placeholder="请输入登录手机号">
+                    <input type="text" placeholder="请输入登录手机号" id="phone_">
                     <span class="rein"></span>
                 </div>
                 <div class="reout">
-                    <input type="text" placeholder="请输入图片效验码" style="width: 150px;"><span class="reg-img"></span>
+                    <input type="text" placeholder="请输入图片效验码" style="width: 150px;" id="code_"><span class="reg-img"></span>
                     <span class="rein"></span>
                 </div>
                 <div class="reout">
@@ -82,18 +87,18 @@
                     <span class="rein"></span>
                 </div>
                 <div class="reout">
-                    <input type="text" placeholder="请输入用户名">
+                    <input type="text" placeholder="请输入用户名(4-8位)" name="use" id="use">
                     <span class="rein"></span>
                 </div>
                 <div class="reout">
-                    <input type="password" placeholder="请输入新密码">
+                    <input type="password" placeholder="请输入新密码" name="psd" id="psd">
                     <span class="rein"></span>
                 </div>
                 <div class="reout">
                     <input type="password" placeholder="确定新密码">
                     <span class="rein"></span>
                 </div>
-                <input type="button" value="立即注册" class="reg-btn">
+                <input type="button" value="立即注册" class="reg-btn" onclick="reg_()">
             </div>
         </div>
     </div>

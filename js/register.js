@@ -19,11 +19,10 @@ reg_get.onclick = function(){
     }
 }
 
-
 // 表单验证
 $('.reout').eq(0).find('input').blur(function(){
     var span=$('.rein').eq(0);
-    var re=/^1[3578]\d{9}$/;
+    var re=/^1[3-9]\d{9}$/;
     if(re.test($(this).val())){
         span.text('输入正确');
         span.css('color','green');
@@ -56,7 +55,7 @@ $('.reout').eq(2).find('input').blur(function(){
 })
 $('.reout').eq(3).find('input').blur(function(){
     var span=$('.rein').eq(3);
-    var re=/^[\u4e00-\u9fa5a-zA-Z]{4,8}$/;
+    var re=/^[a-zA-Z0-9]{4,8}$/;
     if(re.test($(this).val())){
         span.text('输入正确');
         span.css('color','green');
@@ -89,3 +88,22 @@ $('.reout').eq(5).find('input').blur(function(){
     }
 })
 
+function reg_(){
+    var data = {
+        phone:count1.value,
+        code:code_.value,
+        username:use.value,
+        password:psd.value,
+    }
+    var myajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP')
+    myajax.open('http://192.168.31.110:3000/users/register',true)
+    myajax.send(data)
+    myajax.onreadystatechange = function(){
+        if(myajax.readyState ==4){
+            if(myajax.status==200){
+                console.log(myajax.responseText);
+                console.log(data);
+            }
+        }
+    }
+}
