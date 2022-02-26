@@ -8,6 +8,7 @@ gin.onclick = function(){
     box_.style.display='block'
 }
 
+
 function login(){
     var data = 'username='+count1.value+'&password='+sec1.value
     var myajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP')

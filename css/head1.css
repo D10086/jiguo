@@ -253,10 +253,14 @@ ul>li{
 /* 精选报告 */
 .maxl{
     background-color: #F7F7F7;
+    padding-top:20px ;
 }
 #repeat{
     width: 1100px;
     margin: 0 auto;
+}
+.maxl .title{
+    margin: 30px 0px;
 }
 #repeat .title{
     margin-top: 60px;
@@ -265,33 +269,33 @@ ul>li{
     font-weight: bold;
     font-size: 20px;
 }
-#container img{
+.maxl img{
     width: 228px;
 }
-#container ul{
+.maxl ul{
     overflow: hidden;
 }
-#container li{
+.maxl li{
     float: left;
     width: 230px;
     height: 230px;
     margin-right: 40px;
     border: 1px solid rgb(219, 210, 210);
 }
-#container .tittle{
+.maxl .tittle{
     text-align: center;
     padding: 5px 10px;
     margin-bottom: 5px;
     color:rgb(27, 27, 27);
     font-size: 14px;
 }
-#container .susu{
+.maxl .susu{
     padding: 5px 10px;
     color:rgb(27, 27, 27);
     font-size: 14px;
     margin-bottom: 5px;
 }
-#container .num1{
+.maxl .num1{
     display: inline-block;
     padding: 5px 0 0 20px;
     background: url(../image/reply.png) 3px 8px no-repeat;
@@ -299,7 +303,7 @@ ul>li{
     font-size: 14px;
     color: rgb(24, 23, 23);
 }
-#container .num2{
+.maxl .num2{
     display: inline-block;
     padding: 5px 0 0 20px;
     background: url(../image/zan.png) 3px 8px no-repeat;
@@ -318,103 +322,30 @@ ul>li{
     background: #7c7679;
     padding: 15px;
 }
-/*  */
+.maxl .circle img{
+    width: 20px;
+}
+
 #container1{
     height: 232px;
     overflow: hidden;
     margin-bottom: 30px;
 }
-#container1 img{
-    width: 228px;
-} 
-#container1 ul{
-    overflow: hidden;
-}
-#container1 li{
+
+.maxl #container1 li{
     position: relative;
     float: left;
     width: 230px;
     height: 233px;
     margin-right: 40px;
-    /* border: 1px solid rgb(219, 210, 210); */
-}
-#container1 .tittle{
-    text-align: center;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    color:rgb(27, 27, 27);
-    font-size: 14px;
-}
-#container1 .susu{
-    padding: 5px 10px;
-    color:rgb(27, 27, 27);
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-#container1 .num1{
-    display: inline-block;
-    padding: 5px 0 0 20px;
-    background: url(../image/reply.png) 3px 8px no-repeat;
-    margin-left: 90px;
-    font-size: 14px;
-    color: rgb(24, 23, 23);
-}
-#container1 .num2{
-    display: inline-block;
-    padding: 5px 0 0 20px;
-    background: url(../image/zan.png) 3px 8px no-repeat;
-    font-size: 14px;
-    margin-left: 20px;
-    color: rgbrgb(24, 23, 23);
-}
+    border:0;
+} 
+
 #container1 .bg{
     position: absolute;
     top: 213px;
-}
+} 
 
-/*  */
-#container2 img,#container3 img{
-    width: 228px;
-}
-#container2 ul,#container3 ul{
-    overflow: hidden;
-}
-#container2 li,#container3 li{
-    float: left;
-    width: 230px;
-    height: 230px;
-    margin-right: 40px;
-    border: 1px solid rgb(219, 210, 210);
-}
-#container2 .tittle,#container3 .tittle{
-    text-align: center;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    color:rgb(27, 27, 27);
-    font-size: 14px;
-}
-#container2 .susu,#container3 .susu{
-    padding: 5px 10px;
-    color:rgb(27, 27, 27);
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-#container2 .num1,#container3 .num1{
-    display: inline-block;
-    padding: 5px 0 0 20px;
-    background: url(../image/reply.png) 3px 8px no-repeat;
-    margin-left: 90px;
-    font-size: 14px;
-    color: rgb(24, 23, 23);
-}
-#container2 .num2,#container3 .num2{
-    display: inline-block;
-    padding: 5px 0 0 20px;
-    background: url(../image/zan.png) 3px 8px no-repeat;
-    font-size: 14px;
-    margin-left: 20px;
-    color: rgbrgb(24, 23, 23);
-}
 .addmore{
     width: max-content;
     margin: 10px auto;
@@ -435,16 +366,6 @@ ul>li{
 .picmove{
     overflow: hidden;
     width: 1100px;
-}
-.back{
-    position: fixed;
-    right: 150px;
-    bottom: 30px;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    background: #585456;
-    padding: 15px;
 }
 
     
