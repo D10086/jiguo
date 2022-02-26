@@ -186,6 +186,7 @@ ul>li{
     top: 120px;
     right:-56px;
 }
+
 .atitle{
     margin: 10px 0;
     color: black;
@@ -258,7 +259,7 @@ ul>li{
     margin: 0 auto;
 }
 #repeat .title{
-    margin: 10px 0;
+    margin: 60px 0px;
     color: black;
     font-weight: bold;
     font-size: 20px;
