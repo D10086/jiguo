@@ -17,6 +17,17 @@
     padding: 30px 10px;
 
 }
+
+.back{
+    position: fixed;
+    right: 150px;
+    bottom: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background: #7c7679;
+    padding: 15px;
+}
 h3{
     padding: 10px;
     border-bottom: 1px solid grey;
