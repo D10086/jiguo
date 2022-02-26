@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/register.css">
-<<<<<<< HEAD
     <script src="./js/jquery.min.js"></script>
-=======
     <link rel="stylesheet" href="./css/login.css">
->>>>>>> a99bae11f90278bb7e232adbc557b227297ab032
 </head>
 <body>
     <a name="backtop"></a>
@@ -41,11 +38,11 @@
                 <p style="font-size: 18px; color: gray;">极果账号登录</p>
                 <div class="lg-inp">
                     <span class="phone"></span>
-                    <input type="text" class="input_" placeholder="请输入账号" id="count1">
+                    <input type="text" class="input_" placeholder="请输入账号" id="count1" ">
                     <span id="tishi1"></span>
                 </div>
                 <div class="lg-inp"> <span class="pass"></span>
-                    <input type="password" class="input_" placeholder="请输入密码" id="sec1">
+                    <input type="password" class="input_" placeholder="请输入密码" id="sec1" ">
                     <span id="tishi2"></span>
                 </div>
 
@@ -73,11 +70,11 @@
             </div>
             <div class="reg-text">
                 <div class="reout">
-                    <input type="text" placeholder="请输入登录手机号">
+                    <input type="text" placeholder="请输入登录手机号" id="phone_">
                     <span class="rein"></span>
                 </div>
                 <div class="reout">
-                    <input type="text" placeholder="请输入图片效验码" style="width: 150px;"><span class="reg-img"></span>
+                    <input type="text" placeholder="请输入图片效验码" style="width: 150px;" id="code_"><span class="reg-img"></span>
                     <span class="rein"></span>
                 </div>
                 <div class="reout">
@@ -85,18 +82,18 @@
                     <span class="rein"></span>
                 </div>
                 <div class="reout">
-                    <input type="text" placeholder="请输入用户名">
+                    <input type="text" placeholder="请输入用户名(4-8位)" name="use" id="use">
                     <span class="rein"></span>
                 </div>
                 <div class="reout">
-                    <input type="password" placeholder="请输入新密码">
+                    <input type="password" placeholder="请输入新密码" name="psd" id="psd">
                     <span class="rein"></span>
                 </div>
                 <div class="reout">
                     <input type="password" placeholder="确定新密码">
                     <span class="rein"></span>
                 </div>
-                <input type="button" value="立即注册" class="reg-btn">
+                <input type="button" value="立即注册" class="reg-btn" onclick="reg_()">
             </div>
         </div>
     </div>
