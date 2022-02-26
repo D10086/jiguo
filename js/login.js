@@ -1,14 +1,9 @@
 var gin = document.getElementsByClassName('h_span')[1]
 var clo = document.getElementsByClassName('closs')[0]
-var div_  = document.getElementById('login')
-
+var box_ = document.getElementsByClassName('login-box')[0]
 clo.onclick = function(){
-    div_.style.display='none'
+    box_.style.display='none'
 }
 gin.onclick = function(){
-    div_.style.display='block'
-}
-
-count1.onblur=function(){
-    
+    box_.style.display='block'
 }
