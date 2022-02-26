@@ -30,6 +30,7 @@ li{
     background: #7c7679;
     padding: 15px;
 }
+
 .head_logo{
     float: left;
 }
@@ -73,14 +74,16 @@ li{
 }
 
 /* 主体 */
-.login{
+#login{
     width: 700px;
     height: 300px;
     margin: 0 auto;
     position: relative;
     background-color: gainsboro;
 }
-
+.login{
+    display: none; 
+}
 .input_{
     outline: none
 }
