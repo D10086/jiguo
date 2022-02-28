@@ -52,9 +52,13 @@ function pinclick(){
 }
 
 function add(){
-    var circle=document.getElementsByClassName('circle')[0];
-    circle.style.display='none';
-    full1.style.display='block';
+    $('.circle img')[0].src="image/loading-icon.gif";
+    $('.addmore').animate({
+      'display':'none'
+    },function(){
+      $('#container3').css('display','block');
+      $('.addmore').hide();00
+    })
 }
 
 

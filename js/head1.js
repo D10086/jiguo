@@ -1,6 +1,11 @@
 $('.addmore').on('click',function(){
-    $('#container3').css('display','block');
-    $('.addmore').hide()
+    $('.circle img')[0].src="image/loading-icon.gif";
+    $('.addmore').animate({
+      'display':'none'
+    },function(){
+      $('#container3').css('display','block');
+      $('.addmore').hide();00
+    })
 })
 
 // 轮播图
@@ -10,7 +15,7 @@ var picmove=document.getElementsByClassName('winshow')[0];
 // var next=document.getElementsByClassName('right')[0];
 var index=0;
 var timer1=null, timer2=null;
-picmove.scrollLeft=imgs[0].offsetWidth;
+// picmove.scrollLeft=imgs[0].offsetWidth;
 function automove(){
     timer1=setInterval(function () {
       index+=4;
@@ -56,8 +61,8 @@ function pre(){
   clearInterval(timer1);
   clearInterval(timer2);
   picmove.scrollLeft-=imgs[0].offsetWidth;
-  // var ow=document.getElementsByClassName('allleng')[0].offsetWidth;
-  var ow=1080;
+  var ow=picmove.offsetWidth;
+  // var ow=1080;
   console.log(ow)
   if(picmove.scrollLeft<=0){
     picmove.scrollLeft=ow;
@@ -69,8 +74,8 @@ function next(){
   clearInterval(timer1);
   clearInterval(timer2);
   picmove.scrollLeft+=imgs[0].offsetWidth;
-  // var ow=document.getElementsByClassName('allleng')[0].offsetWidth;
-  var ow=1080;
+  var ow=picmove.offsetWidth;
+  // var ow=1080;
   if(picmove.scrollLeft>=ow){
     picmove.scrollLeft=0;
   }
